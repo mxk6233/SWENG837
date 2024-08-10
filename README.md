@@ -2,7 +2,6 @@
     <img src="Screenshot 2024-08-10 055333.png" alt="Car Ride Share System" Height="150",Width="750">
     <br />
 </p>
-
 <h2 align="center">Real-time Ride-Sharing Service</h2>
 
 **Document Overview:**
