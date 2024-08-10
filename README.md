@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="Screenshot 2024-08-10 055333.png" alt="Car Ride Share System">
+    <img src="Screenshot 2024-08-10 055333.png" alt="Car Ride Share System" Height="10",Width="40">
     <br />
 </p>
 
