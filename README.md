@@ -42,11 +42,6 @@
   - Integration with external services like Google Maps API.
 
 
-
-
-
-
-
 ### Use Case Diagram
 
 We have eight main Actors in our system:
@@ -69,7 +64,7 @@ Here are the top use cases of the Car Ride Share Service:
 1. **Request Ride** - Involves Passenger and Driver.
 2. **Process Payment** - Involves Passenger and Payment Processor.
 3. **Manage Ride** - Involves Driver and GPS Service.
-4. **Administer System** - Involves Admin.
+4. **Rate The Ride*** - Involves Passenger.
 5. **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
 
 ### Class Diagram
