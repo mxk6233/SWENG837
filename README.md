@@ -4,21 +4,6 @@
 </p>
 <h2 align="center">Real-time Ride-Sharing Service</h2>
 
-**Document Overview:**
-
-* [System Requirements](#system-requirements)
-* [Use Case Diagram](#use-case-diagram)
-* [Class Diagram](#class-diagram)
-* [Activity Diagrams](#activity-diagrams)
-
-A Car Ride Sharing System is a software built to handle the 
-
-### System Requirements
-
-The following set of requirements for the Ride Sharing Service
-
-1. 
-
 ### Use Case Diagram
 
 We have eight main Actors in our system:
