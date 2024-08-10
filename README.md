@@ -42,7 +42,17 @@ Here are the top use cases of the Car Ride Share Service:
 5. **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
 
 
+### Class Diagram
 
+Here are the main classes of our Car Rental System:
+
+   - **Classes:**
+     - `User` (attributes: `userID`, `name`, `email`, `role`).
+     - `Ride` (attributes: `rideID`, `status`, `price`).
+     - `Vehicle` (attributes: `vehicleID`, `licensePlate`, `type`).
+     - `Payment` (attributes: `paymentID`, `amount`, `method`).
+     - `Route` (attributes: `routeID`, `startLocation`, `endLocation`).
+     - `Feedback` (attributes: `feedbackID`, `rating`, `comments`).
 
 
 
