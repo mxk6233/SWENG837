@@ -3,7 +3,7 @@
     <br />
 </p>
 
-<h3 align="center">Real-time Ride-Sharing Service</h3>
+<h2 align="center">Real-time Ride-Sharing Service</h2>
 
 **Document Overview:**
 
