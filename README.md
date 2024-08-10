@@ -1,3 +1,11 @@
+<p align="center">
+    <img src=""C:\Users\mkabb\OneDrive\Desktop\Screenshot 2024-08-10 055333.png"" alt="Car Ride Share System">
+    <br />
+    Car Rental System
+</p>
+
+
+
 <h1 align="center">Riksha</h1>
 <h3 align="center">Real-time Ride-Sharing Service</h3>
 
