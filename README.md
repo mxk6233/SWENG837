@@ -282,3 +282,6 @@ Figure 8: Componenant Diagram
 
 <img src="dree.png">
 Figure 9: Activity Diagram
+
+<img src="deployment.png">
+Figure 9: Deployement Diagram
