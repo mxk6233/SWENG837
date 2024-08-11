@@ -174,7 +174,7 @@
   - The ride status is updated to “In Progress.”
   - The system begins fare calculation based on distance and time.
 
-### Use Case 6: Rate The Ride
+### Use Case 4: Rate The Ride
 
 - **Use Case Name:** Rate The Ride
 - **Scope:** Riksha Ride-Sharing Application
@@ -205,7 +205,7 @@
   - The ride is marked as completed and rated.
   - The driver’s rating is updated, and the feedback is logged.
 
-### Use Case 7: Verify Driver Info
+### Use Case 5: Verify Driver Info
 
 - **Use Case Name:** Verify Driver Info
 - **Scope:** Riksha Ride-Sharing Application
@@ -237,7 +237,7 @@
   - The ride status is updated to “Verified” if the driver’s details match.
   - The ride may be canceled or reassigned if the verification fails.
 
-### Use Case 8: Provide Customer Support
+### Use Case 6: Provide Customer Support
 
 - **Use Case Name:** Provide Customer Support
 - **Scope:** Riksha Ride-Sharing Application
