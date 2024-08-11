@@ -74,7 +74,7 @@
 - **Feedback:** Attributes: `feedbackID`, `rating`, `comments`
 
 <img src="new uml.png">
-`Figure 1: UML`
+*Figure 1: UML*
 
 
 ### Use Case 1: Request Ride
