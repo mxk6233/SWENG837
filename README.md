@@ -258,3 +258,15 @@
   5. If the issue is unresolved, the system connects the user
 
 <img src="Screenshot 2024-08-11 030553.png">
+
+<img src="SSD1111.png">
+
+<img src="SSD11111.png">
+
+<img src="SSD112.png">
+
+<img src="SSD113.png">
+
+<img src="SSD2.png">
+
+<img src="SSD555.png">
