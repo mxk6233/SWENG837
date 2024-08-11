@@ -280,3 +280,5 @@ Figure 7: Provide Customer Support
 <img src="2222.png">
 Figure 8: Componenant Diagram
 
+<img src="dree.png">
+Figure 9: Activity Diagram
