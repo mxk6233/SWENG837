@@ -302,7 +302,7 @@ Figure 9: Deployment Diagram
 
 My primary goals are to ensure scalability, flexibility, performance, and maintainability. Below is the rationale and reasoning behind the design choices for the system, based on the microservices architecture and other design patterns.
 
-#### 1. **Microservices Architecture**
+#### Microservices Architecture
 
 **Rationale:**
 - **Scalability**: By breaking the system into smaller, independent microservices, each component can be scaled independently based on demand. For example, if the Trip Service experiences high traffic during peak hours, it can be scaled up without affecting other services.
@@ -313,7 +313,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 - Ride-sharing apps handle complex, diverse functionalities like user management, trip scheduling, payment processing, and more. Microservices provide a natural way to divide these functionalities into manageable parts.
 - Different microservices can use different technologies and frameworks that best suit their needs (e.g., a NoSQL database for Geolocation Service and a relational database for Payment Service).
 
-#### 2. **API Gateway**
+#### API Gateway
 
 **Rationale:**
 - **Unified Access Point**: The API Gateway provides a single entry point for all client requests. This simplifies client interactions by abstracting the complexity of underlying microservices.
@@ -323,7 +323,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 **Reasoning:**
 - An API Gateway centralizes the management of routing and security policies, allowing for easier maintenance and scalability. This also reduces the need for each microservice to handle cross-cutting concerns such as authentication and logging.
 
-#### 3. **Database per Service**
+#### Database per Service
 
 **Rationale:**
 - **Decoupling**: Each microservice manages its own data store, reducing dependencies between services and allowing them to evolve independently.
@@ -341,7 +341,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 **Reasoning:**
 - Ride-sharing apps often involve real-time updates and notifications (e.g., driver status changes, trip progress). An event-driven architecture can efficiently handle these requirements and ensure that services remain responsive and resilient.
 
-#### 5. **Circuit Breaker Pattern**
+#### Circuit Breaker Pattern
 
 **Rationale:**
 - **Fault Tolerance**: Prevents cascading failures by stopping calls to a failing service and allowing for fallback mechanisms.
@@ -350,7 +350,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 **Reasoning:**
 - Ride-sharing apps are complex and prone to failures, especially during peak usage. Implementing circuit breakers helps maintain system stability and ensures that issues in one service do not bring down the entire system.
 
-#### 6. **Monitoring and Logging**
+#### Monitoring and Logging
 
 **Rationale:**
 - **Operational Visibility**: Provides insights into the performance and health of microservices, enabling proactive management and troubleshooting.
@@ -359,7 +359,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 **Reasoning:**
 - Monitoring and logging are crucial for understanding system behavior, diagnosing issues, and ensuring reliable operations. They also support the quick resolution of problems and provide necessary data for improving system performance.
 
-#### 7. **Security Measures**
+#### Security Measures
 
 **Rationale:**
 - **Authentication and Authorization**: Secure access to services and data, protecting against unauthorized access and potential security breaches.
@@ -368,7 +368,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 **Reasoning:**
 - Ride-sharing apps handle sensitive user and payment information. Implementing robust security measures is essential to protect user data, comply with regulations, and maintain user trust.
 
-#### 8. **Backup and Recovery**
+#### Backup and Recovery
 
 **Rationale:**
 - **Data Durability**: Regular backups ensure that data is not lost in case of failures or disasters.
@@ -376,4 +376,3 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 
 **Reasoning:**
 - Ensuring that the system can recover from failures or data loss is critical for maintaining service availability and reliability. Backup and recovery processes are essential components of a robust system design.
-
