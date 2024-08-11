@@ -263,7 +263,6 @@
 
 <img src="SSD11111.png">
 
-<img src="SSD112.png">
 
 <img src="SSD113.png">
 
