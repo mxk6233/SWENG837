@@ -4,9 +4,6 @@
 </p>
 <h2 align="center">Real-time Ride-Sharing Service</h2>
 
-### Problem Statement and Requirements
-
-
 **Business Requirements:**
 - **Problem Definition:** Riksha aims to provide a real-time ride-sharing service that efficiently matches passengers with drivers, considering factors like location, traffic, and dynamic pricing.
 - **Functionalities:**
@@ -25,7 +22,6 @@
   - Optimize operational costs while ensuring quality.
   - Maintain a high level of customer satisfaction.
 
-
 **Non-Functional Requirements:**
 - **Performance:**
   - Scalability to handle up to millions of users.
@@ -41,10 +37,7 @@
   - Compliance with local transportation regulations.
   - Integration with external services like Google Maps API.
 
-
-### Use Case Diagram
-
-We have eight main Actors in our system:
+### Use Case Diagram:
 
 #### Actor Classification:
 | Type      | Actor         | Goal Description                                                               |
@@ -58,40 +51,27 @@ We have eight main Actors in our system:
 | **Offstage** | Customer Support | Resolve passenger and driver issues, handle complaints, and provide assistance. |
 | **Offstage** | Maintenance Team | Ensure the app and server infrastructure are functioning smoothly.               |
 
-
-The top use cases of the Car Ride Share Service:
-### 2. Use Case Names
+### Use Case Names:
 
 1. **Request Ride** - Involves Passenger and Driver.
 2. **Accept Ride** - Involves Passenger and Driver.
 3. **Start the Ride** - Involves Passenger and Driver.
 4. **End the Ride** - Involves Passenger and Driver.
-5. **Verify Driver Info** - Involves Passenger and Driver.
+5. **Process Payment** - Involves Passenger and Payment Processor.
+6. **Rate The Ride*** - Involves Passenger.
+7. **Verify Driver Info** - Involves Passenger and Driver.
+8. **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
 
-#### Use Case Names:
-1. **Request Ride** - Involves Passenger and Driver.
-2. **Process Payment** - Involves Passenger and Payment Processor.
-3. **Manage Ride** - Involves Driver and GPS Service.
-4. **Rate The Ride*** - Involves Passenger.
-5. **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
+### Classes
 
-### Class Diagram
+- **User:** Attributes: `userID`, `name`, `phoneNumber`, `email`, `userType` (Driver/Passenger), `location`
+- **Driver:** Attributes: `driverID`, `licenseNumber`, `vehicleDetails`, `rating`, `status` (Available/Unavailable)
+- **Passenger:** Attributes: `passengerID`, `paymentMethod`, `rideHistory`
+- **Ride:** Attributes: `rideID`, `startLocation`, `endLocation`, `fare`, `rideStatus`, `route`, `timestamp`
+- **Vehicle:** Attributes: `vehicleID`, `vehicleType`, `registrationNumber`, `capacity`, `driver`
+- **Payment:** Attributes: `paymentID`, `amount`, `paymentMethod`, `status`, `transactionTimestamp`
+- **Route:** Attributes: `routeID`, `startPoint`, `endPoint`, `waypoints`, `estimatedTime`
+- **Rating:** Attributes: `ratingID`, `rideID`, `userID`, `score`, `feedback`
+- **Notification:** Attributes: `notificationID`, `userID`, `message`, `timestamp`
+- **Feedback:** Attributes: `feedbackID`, `rating`, `comments`
 
-Here are the main classes of our Car Rental System:
-
-   - **Classes:**
-     - `User` (attributes: `userID`, `name`, `email`, `role`).
-     - `Ride` (attributes: `rideID`, `status`, `price`).
-     - `Vehicle` (attributes: `vehicleID`, `licensePlate`, `type`).
-     - `Payment` (attributes: `paymentID`, `amount`, `method`).
-     - `Route` (attributes: `routeID`, `startLocation`, `endLocation`).
-     - `Feedback` (attributes: `feedbackID`, `rating`, `comments`).
-- **User:** Attributes: userID, name, phoneNumber, email, userType (Driver/Passenger), location
-- **Driver:** Attributes: driverID, licenseNumber, vehicleDetails, rating, status (Available/Unavailable)
-- **Passenger:** Attributes: passengerID, paymentMethod, rideHistory
-- **Ride:** Attributes: rideID, startLocation, endLocation, fare, rideStatus, route, timestamp
-- **Vehicle:** Attributes: vehicleID, vehicleType, registrationNumber, capacity, driver
-- **Payment:** Attributes: paymentID, amount, paymentMethod, status, transactionTimestamp
-- **Route:** Attributes: routeID, startPoint, endPoint, waypoints, estimatedTime
-- **Rating:** Attributes: ratingID, rideID, userID, score, feedback
-- **Notification:** Attributes: notificationID, userID, message, timestamp
