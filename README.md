@@ -291,14 +291,14 @@ Figure 8: Components Diagram
 
 
 <img src="dree.png">
-**Figure 9: Activity Diagram
+Figure 9: Activity Diagram
 
 
 <img src="deployment.png">
-**Figure 9**: Deployment Diagram
+Figure 9: Deployment Diagram
 
 
-### Rational and Reasoning for the System Design of Riksha Ride-Sharing Application
+### Rational for the System Design of Riksha Ride-Sharing Application
 
 My primary goals are to ensure scalability, flexibility, performance, and maintainability. Below is the rationale and reasoning behind the design choices for the system, based on the microservices architecture and other design patterns.
 
@@ -332,7 +332,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 **Reasoning:**
 - Ride-sharing apps involve various types of data (e.g., user profiles, trip details, payment records) that may require different storage solutions. This pattern ensures each microservice can select the optimal database technology for its specific needs.
 
-#### 4. **Event-Driven Architecture**
+#### Event-Driven Architecture
 
 **Rationale:**
 - **Asynchronous Communication**: Using message brokers for asynchronous communication helps decouple services and handle high-throughput scenarios efficiently.
