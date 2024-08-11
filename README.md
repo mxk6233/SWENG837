@@ -259,3 +259,4 @@
   4. The system attempts to resolve the issue with automated tools or FAQs.
   5. If the issue is unresolved, the system connects the user
 
+<img src="Screenshot 2024-08-11 030553.png">
