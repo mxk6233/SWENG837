@@ -260,12 +260,16 @@
 <img src="Screenshot 2024-08-11 030553.png">
 
 <img src="SSD1111.png">
+Figure: Request Ride
 
 <img src="SSD11111.png">
-
+Figure: Rate Ride
 
 <img src="SSD113.png">
+Figure: Start Ride
 
 <img src="SSD2.png">
+Figure: Verify Driver Info
 
 <img src="SSD555.png">
+Figure: Provide Customer Support
