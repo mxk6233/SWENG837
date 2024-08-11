@@ -287,7 +287,7 @@ Figure 7: Provide Customer Support Sequence Diagram
 
 
 <img src="2222.png">
-Figure 8: Componenant Diagram
+Figure 8: Components Diagram
 
 
 <img src="dree.png">
