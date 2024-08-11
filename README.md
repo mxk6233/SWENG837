@@ -74,7 +74,7 @@
 - **Feedback:** Attributes: `feedbackID`, `rating`, `comments`
 
 <img src="new uml.png">
-Figure 1: UML
+Figure 1: UML for Use Cases
 
 
 ### Use Case 1: Request Ride
@@ -263,19 +263,19 @@ Figure 1: UML
 Figure 2: Domain Model
 
 <img src="SSD1111.png">
-Figure 3: Request Ride
+Figure 3: Request Ride Sequence Diagram
 
 <img src="SSD11111.png">
-Figure 4: Rate Ride
+Figure 4: Rate Ride Sequence Diagram
 
 <img src="SSD113.png">
-Figure 5: Start Ride
+Figure 5: Start Ride Sequence Diagram
 
 <img src="SSD2.png">
-Figure 6: Verify Driver Info
+Figure 6: Verify Driver Information Sequence Diagram
 
 <img src="SSD555.png">
-Figure 7: Provide Customer Support
+Figure 7: Provide Customer Support Sequence Diagram
 
 <img src="2222.png">
 Figure 8: Componenant Diagram
