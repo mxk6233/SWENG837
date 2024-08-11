@@ -62,7 +62,7 @@
 
 ### Classes
 
-- **User:** Attributes: `userID`, `name`, `phoneNumber`, `email`, `userType` (Driver/Passenger), `location`
+- **User:** Attributes: `userID`, `name`, `phoneNumber`, `email`, `location` `userType` (Driver/Passenger)
 - **Driver:** Attributes: `driverID`, `licenseNumber`, `vehicleDetails`, `rating`, `status` (Available/Unavailable)
 - **Passenger:** Attributes: `passengerID`, `paymentMethod`, `rideHistory`
 - **Ride:** Attributes: `rideID`, `startLocation`, `endLocation`, `fare`, `rideStatus`, `route`, `timestamp`
