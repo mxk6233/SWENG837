@@ -2,7 +2,7 @@
     <img src="Screenshot 2024-08-10 055333.png" alt="Car Ride Share System" Height="150",Width="750">
     <br />
 </p>
-<h2 align="center">Real-time Ride-Sharing Service</h2>
+<h2 align="center">Real time Ride-Sharing Service</h2>
 
 **Business Requirements:**
 - **Problem Definition:** Riksha aims to provide a real time ride-sharing service that efficiently matches passengers with drivers, considering factors like location, traffic, and dynamic pricing.
