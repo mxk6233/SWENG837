@@ -53,14 +53,14 @@
 
 ### Use Case Names:
 
-1. **Request Ride** - Involves Passenger and Driver.
-2. **Accept Ride** - Involves Passenger and Driver.
-3. **Start the Ride** - Involves Passenger and Driver.
-4. **End the Ride** - Involves Passenger and Driver.
-5. **Process Payment** - Involves Passenger and Payment Processor.
-6. **Rate The Ride*** - Involves Passenger.
-7. **Verify Driver Info** - Involves Passenger and Driver.
-8. **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
+- **Request Ride** - Involves Passenger and Driver.
+- **Accept Ride** - Involves Passenger and Driver.
+- **Start the Ride** - Involves Passenger and Driver.
+- **End the Ride** - Involves Passenger and Driver.
+- **Process Payment** - Involves Passenger and Payment Processor.
+- **Rate The Ride*** - Involves Passenger.
+- **Verify Driver Info** - Involves Passenger and Driver.
+- **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
 
 ### Classes
 
