@@ -74,7 +74,7 @@
 - **Feedback:** Attributes: `feedbackID`, `rating`, `comments`
 
 <img src="new uml.png">
-- Figure 1: UML
+Figure 1: UML
 
 
 ### Use Case 1: Request Ride
@@ -260,19 +260,19 @@
   5. If the issue is unresolved, the system connects the user
 
 <img src="Screenshot 2024-08-11 030553.png">
-`Figure 2: Domain Model`
+Figure 2: Domain Model
 
 <img src="SSD1111.png">
-`Figure 3: Request Ride`
+Figure 3: Request Ride
 
 <img src="SSD11111.png">
-`Figure 4: Rate Ride`
+Figure 4: Rate Ride
 
 <img src="SSD113.png">
-`Figure 5: Start Ride`
+Figure 5: Start Ride
 
 <img src="SSD2.png">
-`Figure 6: Verify Driver Info`
+Figure 6: Verify Driver Info
 
 <img src="SSD555.png">
-`Figure 7: Provide Customer Support`
+Figure 7: Provide Customer Support
