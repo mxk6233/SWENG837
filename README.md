@@ -4,9 +4,6 @@
 </p>
 <h2 align="center">Real-time Ride-Sharing Service</h2>
 
-<img src="new uml.png" >
-
-
 **Business Requirements:**
 - **Problem Definition:** Riksha aims to provide a real-time ride-sharing service that efficiently matches passengers with drivers, considering factors like location, traffic, and dynamic pricing.
 - **Functionalities:**
@@ -77,4 +74,6 @@
 - **Rating:** Attributes: `ratingID`, `rideID`, `userID`, `score`, `feedback`
 - **Notification:** Attributes: `notificationID`, `userID`, `message`, `timestamp`
 - **Feedback:** Attributes: `feedbackID`, `rating`, `comments`
+
+<img src="new uml.png">
 
