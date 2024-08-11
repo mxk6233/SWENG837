@@ -328,7 +328,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 - **Resilience**: Isolation of services means that failures in one service do not necessarily impact others. For instance, if the Notification Service fails, it won't bring down the Trip Service or the Payment Service.
 
 **Reasoning:**
-- Ride-sharing apps handle complex, diverse functionalities like user management, trip scheduling, payment processing, and more. Microservices provide a natural way to divide these functionalities into manageable parts.
+- The Ride Sharing App handles complex, diverse functionalities like user management, trip scheduling, payment processing, and more. Microservices provide a natural way to divide these functionalities into manageable parts.
 - Different microservices can use different technologies and frameworks that best suit their needs (e.g., a NoSQL database for Geolocation Service and a relational database for Payment Service).
 
 #### API Gateway
@@ -348,7 +348,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 - **Optimized Storage**: Different types of data can be stored in databases best suited to their needs (e.g., SQL for transactional data and NoSQL for large-scale, unstructured data).
 
 **Reasoning:**
-- Ride-sharing apps involve various types of data (e.g., user profiles, trip details, payment records) that may require different storage solutions. This pattern ensures each microservice can select the optimal database technology for its specific needs.
+- The Ride Sharing App involve various types of data (e.g., user profiles, trip details, payment records) that may require different storage solutions. This pattern ensures each microservice can select the optimal database technology for its specific needs.
 
 #### Event-Driven Architecture
 
@@ -357,7 +357,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 - **Event Sourcing**: Captures changes in state as events, making it easier to reconstruct and audit system states.
 
 **Reasoning:**
-- Ride-sharing apps often involve real-time updates and notifications (e.g., driver status changes, trip progress). An event-driven architecture can efficiently handle these requirements and ensure that services remain responsive and resilient.
+- The Ride Sharing App is involved in real-time updates and notifications (e.g., driver status changes, trip progress). An event-driven architecture can efficiently handle these requirements and ensure that services remain responsive and resilient.
 
 #### Circuit Breaker Pattern
 
@@ -366,7 +366,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 - **Improved Stability**: Protects the system from overloading and ensures that failures in one part of the system do not lead to widespread outages.
 
 **Reasoning:**
-- Ride-sharing apps are complex and prone to failures, especially during peak usage. Implementing circuit breakers helps maintain system stability and ensures that issues in one service do not bring down the entire system.
+- The Ride Sharing App is complex and prone to failures, especially during peak usage. Implementing circuit breakers helps maintain system stability and ensures that issues in one service do not bring down the entire system.
 
 #### Monitoring and Logging
 
@@ -384,7 +384,7 @@ My primary goals are to ensure scalability, flexibility, performance, and mainta
 - **Data Encryption**: Ensures sensitive data, such as payment information, is protected both in transit and at rest.
 
 **Reasoning:**
-- Ride-sharing apps handle sensitive user and payment information. Implementing robust security measures is essential to protect user data, comply with regulations, and maintain user trust.
+- The Ride Sharing App handles sensitive user and payment information. Implementing robust security measures is essential to protect user data, comply with regulations, and maintain user trust.
 
 #### Backup and Recovery
 
