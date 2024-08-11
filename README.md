@@ -5,7 +5,7 @@
 <h2 align="center">Real-time Ride-Sharing Service</h2>
 
 **Business Requirements:**
-- **Problem Definition:** Riksha aims to provide a real-time ride-sharing service that efficiently matches passengers with drivers, considering factors like location, traffic, and dynamic pricing.
+- **Problem Definition:** Riksha aims to provide a real time ride-sharing service that efficiently matches passengers with drivers, considering factors like location, traffic, and dynamic pricing.
 - **Functionalities:**
   - Passenger registration and login.
   - Driver registration and approval process.
@@ -28,7 +28,7 @@
   - Response time under 2 seconds for critical operations.
 - **Security:**
   - Authentication via OAuth2 for secure access.
-  - Authorization based on roles (admin, driver, passenger).
+  - Authorization based on roles (admin, driver, passenger, customer support).
   - Data encryption for all sensitive information.
 - **Maintainability:**
   - Modular code structure to allow for easy updates and feature additions.
@@ -102,7 +102,7 @@ Figure 1: UML for Use Cases
   5. A driver accepts the request.
   6. The system notifies the passenger of the assigned driver’s details.
 - **Extensions:**
-  - **4a.** No drivers are available:
+  - No drivers are available:
     - The system notifies the passenger that no drivers are currently available and suggests trying again later.
 - **Special Requirements:**
   - The system must provide real-time availability of drivers.
@@ -133,16 +133,16 @@ Figure 1: UML for Use Cases
   3. The driver reviews the details and accepts the ride.
   4. The system notifies the passenger that a driver has accepted the ride.
 - **Extensions:**
-  - **3a.** Driver rejects the ride:
+  - Driver rejects the ride:
     - The system searches for another available driver.
-  - **3b.** Driver is unavailable after accepting:
+  - Driver is unavailable after accepting:
     - The system reassigns the ride to a different driver and notifies the passenger.
 - **Special Requirements:**
   - The system must notify the driver within a few seconds of a ride request.
   - The driver’s app must show accurate location and ride details.
 - **Postconditions:**
   - The driver’s acceptance is logged in the system.
-  - The ride status is updated to “Driver En Route.”
+  - The ride status is updated to “Driver is on the way.”
 
 ### Use Case 3: Start the Ride
 
@@ -167,7 +167,7 @@ Figure 1: UML for Use Cases
   4. The driver taps “Start Ride” in the app.
   5. The system begins real-time tracking of the ride.
 - **Extensions:**
-  - **2a.** Passenger fails to verify identity:
+  - Passenger fails to verify identity:
     - The driver contacts Customer Support for verification assistance.
 - **Special Requirements:**
   - The system must accurately track the ride in real time and provide estimated arrival times.
@@ -197,7 +197,7 @@ Figure 1: UML for Use Cases
   4. The driver is notified of the new rating.
   5. The rating is stored in the driver's profile for future reference.
 - **Extensions:**
-  - **2a.** Passenger skips the rating:
+  - Passenger skips the rating:
     - The system reminds the passenger to rate the ride later.
     - If the passenger still does not rate, the ride is marked as unrated.
 - **Special Requirements:**
@@ -223,13 +223,13 @@ Figure 1: UML for Use Cases
 - **Success Guarantee:**
   - The passenger successfully verifies the driver's identity and vehicle information.
 - **Main Success Scenario:**
-  1. After a driver accepts the ride, the passenger receives the driver's details (name, photo, vehicle model, and license plate).
+  1. After a driver accepts the ride, the passenger receives the driver's details (name, photo, vehicle model, vehicle year, and license plate).
   2. The passenger reviews the driver's details before the ride begins.
   3. Upon the driver's arrival, the passenger checks the vehicle and driver against the provided details.
   4. The passenger confirms the driver's identity in the app.
   5. The system updates the ride status to “Verified.”
 - **Extensions:**
-  - **3a.** Driver's details do not match:
+  - Driver's details do not match:
     - The passenger contacts Customer Support through the app.
     - Customer Support verifies the issue and either assigns a new driver or cancels the ride with a refund.
 - **Special Requirements:**
@@ -260,6 +260,24 @@ Figure 1: UML for Use Cases
   3. The user selects the issue that best describes their problem.
   4. The system attempts to resolve the issue with automated tools or FAQs.
   5. If the issue is unresolved, the system connects the user
+- **Extensions:**
+- The issue is resolved using automated tools:
+- The system updates the user that the issue has been resolved automatically 
+and closes the support ticket.
+- No Customer Support agents are available:
+The system informs the user of the delay and offers to escalate the issue or schedule a callback.
+- The issue cannot be resolved immediately:
+- The Customer Support agent escalates the issue to a specialist or management.
+- The user is informed of the escalation and provided with an estimated resolution time.
+- **Special Requirements:**
+- The system must provide 24/7 customer support, either through automated tools or live agents.
+- The system must securely handle and store any sensitive information shared during the support process.
+- The system must ensure that unresolved issues are tracked and escalated appropriately.
+- **Postconditions:**
+- The issue is resolved, and the support ticket is closed.
+- The resolution is logged in the system for future reference and analysis.
+- If the issue is escalated, it remains open until resolved by the appropriate team.
+
 
 
 <img src="Screenshot 2024-08-11 030553.png">
