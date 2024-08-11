@@ -58,7 +58,7 @@
 - **Start the Ride** - Involves Passenger and Driver.
 - **End the Ride** - Involves Passenger and Driver.
 - **Process Payment** - Involves Passenger and Payment Processor.
-- **Rate The Ride*** - Involves Passenger.
+- **Rate The Ride** - Involves Passenger.
 - **Verify Driver Info** - Involves Passenger and Driver.
 - **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
 
