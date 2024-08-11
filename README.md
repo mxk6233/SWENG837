@@ -274,8 +274,9 @@ Figure 5: Start Ride
 <img src="SSD2.png">
 Figure 6: Verify Driver Info
 
-<img src="2222.png">
+<img src="SSD555.png"
 Figure 7: Provide Customer Support
 
-<img src="SSD555.png">
+><img src="2222.png">
 Figure 8: Componenant Diagram
+
