@@ -291,11 +291,11 @@ Figure 8: Components Diagram
 
 
 <img src="dree.png">
-Figure 9: Activity Diagram
+**Figure 9: Activity Diagram
 
 
 <img src="deployment.png">
-Figure 9: Deployment Diagram
+**Figure 9**: Deployment Diagram
 
 
 ### Rational and Reasoning for the System Design of Riksha Ride-Sharing Application
