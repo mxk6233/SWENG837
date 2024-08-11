@@ -56,8 +56,6 @@
 - **Request Ride** - Involves Passenger and Driver.
 - **Accept Ride** - Involves Passenger and Driver.
 - **Start the Ride** - Involves Passenger and Driver.
-- **End the Ride** - Involves Passenger and Driver.
-- **Process Payment** - Involves Passenger and Payment Processor.
 - **Rate The Ride** - Involves Passenger.
 - **Verify Driver Info** - Involves Passenger and Driver.
 - **Provide Customer Support** - Involves Passenger, Driver, and Customer Support.
@@ -205,7 +203,7 @@
   - The ride is marked as completed and rated.
   - The driver’s rating is updated, and the feedback is logged.
 
-### Use Case 5: Verify Driver Info
+### Use Case 5: Verify Driver Information
 
 - **Use Case Name:** Verify Driver Info
 - **Scope:** Riksha Ride-Sharing Application
