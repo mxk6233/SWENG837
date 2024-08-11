@@ -295,6 +295,6 @@ Figure 9: Activity Diagram
 
 
 <img src="deployment.png">
-Figure 9: Deployement Diagram
+Figure 9: Deployment Diagram
 
 
