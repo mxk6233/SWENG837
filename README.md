@@ -298,3 +298,82 @@ Figure 9: Activity Diagram
 Figure 9: Deployment Diagram
 
 
+### Rational and Reasoning for the System Design of Riksha Ride-Sharing Application
+
+My primary goals are to ensure scalability, flexibility, performance, and maintainability. Below is the rationale and reasoning behind the design choices for the system, based on the microservices architecture and other design patterns.
+
+#### 1. **Microservices Architecture**
+
+**Rationale:**
+- **Scalability**: By breaking the system into smaller, independent microservices, each component can be scaled independently based on demand. For example, if the Trip Service experiences high traffic during peak hours, it can be scaled up without affecting other services.
+- **Flexibility**: Each microservice can be developed, deployed, and updated independently. This modular approach allows different teams to work on various services concurrently, speeding up development and enabling continuous deployment.
+- **Resilience**: Isolation of services means that failures in one service do not necessarily impact others. For instance, if the Notification Service fails, it won't bring down the Trip Service or the Payment Service.
+
+**Reasoning:**
+- Ride-sharing apps handle complex, diverse functionalities like user management, trip scheduling, payment processing, and more. Microservices provide a natural way to divide these functionalities into manageable parts.
+- Different microservices can use different technologies and frameworks that best suit their needs (e.g., a NoSQL database for Geolocation Service and a relational database for Payment Service).
+
+#### 2. **API Gateway**
+
+**Rationale:**
+- **Unified Access Point**: The API Gateway provides a single entry point for all client requests. This simplifies client interactions by abstracting the complexity of underlying microservices.
+- **Routing and Load Balancing**: It routes requests to the appropriate microservices and balances the load across instances, improving performance and reliability.
+- **Security**: Handles authentication and authorization, protecting backend services from unauthorized access.
+
+**Reasoning:**
+- An API Gateway centralizes the management of routing and security policies, allowing for easier maintenance and scalability. This also reduces the need for each microservice to handle cross-cutting concerns such as authentication and logging.
+
+#### 3. **Database per Service**
+
+**Rationale:**
+- **Decoupling**: Each microservice manages its own data store, reducing dependencies between services and allowing them to evolve independently.
+- **Optimized Storage**: Different types of data can be stored in databases best suited to their needs (e.g., SQL for transactional data and NoSQL for large-scale, unstructured data).
+
+**Reasoning:**
+- Ride-sharing apps involve various types of data (e.g., user profiles, trip details, payment records) that may require different storage solutions. This pattern ensures each microservice can select the optimal database technology for its specific needs.
+
+#### 4. **Event-Driven Architecture**
+
+**Rationale:**
+- **Asynchronous Communication**: Using message brokers for asynchronous communication helps decouple services and handle high-throughput scenarios efficiently.
+- **Event Sourcing**: Captures changes in state as events, making it easier to reconstruct and audit system states.
+
+**Reasoning:**
+- Ride-sharing apps often involve real-time updates and notifications (e.g., driver status changes, trip progress). An event-driven architecture can efficiently handle these requirements and ensure that services remain responsive and resilient.
+
+#### 5. **Circuit Breaker Pattern**
+
+**Rationale:**
+- **Fault Tolerance**: Prevents cascading failures by stopping calls to a failing service and allowing for fallback mechanisms.
+- **Improved Stability**: Protects the system from overloading and ensures that failures in one part of the system do not lead to widespread outages.
+
+**Reasoning:**
+- Ride-sharing apps are complex and prone to failures, especially during peak usage. Implementing circuit breakers helps maintain system stability and ensures that issues in one service do not bring down the entire system.
+
+#### 6. **Monitoring and Logging**
+
+**Rationale:**
+- **Operational Visibility**: Provides insights into the performance and health of microservices, enabling proactive management and troubleshooting.
+- **Auditing and Compliance**: Ensures that system activities can be tracked and reviewed for security and compliance purposes.
+
+**Reasoning:**
+- Monitoring and logging are crucial for understanding system behavior, diagnosing issues, and ensuring reliable operations. They also support the quick resolution of problems and provide necessary data for improving system performance.
+
+#### 7. **Security Measures**
+
+**Rationale:**
+- **Authentication and Authorization**: Secure access to services and data, protecting against unauthorized access and potential security breaches.
+- **Data Encryption**: Ensures sensitive data, such as payment information, is protected both in transit and at rest.
+
+**Reasoning:**
+- Ride-sharing apps handle sensitive user and payment information. Implementing robust security measures is essential to protect user data, comply with regulations, and maintain user trust.
+
+#### 8. **Backup and Recovery**
+
+**Rationale:**
+- **Data Durability**: Regular backups ensure that data is not lost in case of failures or disasters.
+- **Disaster Recovery**: Allows for quick restoration of the system to a known good state, minimizing downtime and data loss.
+
+**Reasoning:**
+- Ensuring that the system can recover from failures or data loss is critical for maintaining service availability and reliability. Backup and recovery processes are essential components of a robust system design.
+
